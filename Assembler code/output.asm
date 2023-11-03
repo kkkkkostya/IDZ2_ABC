@@ -1,8 +1,8 @@
 .data
-output_text: .asciz "Результат:   "
+output_text: .asciz "Р РµР·СѓР»СЊС‚Р°С‚:   "
 
 .globl output
-output:					# Вывод double
+output:					# Р’С‹РІРѕРґ double
 	la a0, output_text
 	li a7, 4
 	ecall
