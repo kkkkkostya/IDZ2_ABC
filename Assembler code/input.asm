@@ -1,8 +1,8 @@
 .data
-input_text: .asciz "Введите число  "
+input_text: .asciz "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ  "
 
 .globl input_double
-input_double: 			# Считывание double
+input_double: 			# РЎС‡РёС‚С‹РІР°РЅРёРµ double
 	la a0, input_text
 	li a7, 4
 	ecall
@@ -11,7 +11,7 @@ input_double: 			# Считывание double
 	ecall
 	ret
 	
-.globl input_int			# Считывание int
+.globl input_int			# РЎС‡РёС‚С‹РІР°РЅРёРµ int
 input_int:
 	la a0, input_text
 	li a7, 4
